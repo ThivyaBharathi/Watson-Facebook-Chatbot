@@ -1,10 +1,27 @@
+declared-services:
+node-red-cloudantNoSQLDB:
+  label: cloudantNoSQLDB
+  plan: Lite
+Speech-to-Text-chatbot:
+  label: speech_to_text
+  plan: Lite
+Visual-Recognition-chatbot:
+  label: watson_vision_combined
+  plan: Lite
+Watson-Assistant-chatbot:
+  label: conversation
+  plan: Lite
 applications:
 - path: .
   memory: 256M
   instances: 1
   domain: mybluemix.net
-  name: tal-chatbots
-  host: tal-chatbots
+  name: watson-facebook-chatbot
   disk_quota: 1024M
   services:
-  - tal-chatbots-cloudantNoSQLDB
+  - node-red-cloudantNoSQLDB
+  - Speech-to-Text-chatbot
+  - Visual-Recognition-chatbot
+  - Watson-Assistant-chatbot
+  env:
+    NODE_RED_STORAGE_NAME: node-red-cloudantNoSQLDB

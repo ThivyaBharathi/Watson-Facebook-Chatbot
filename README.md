@@ -52,7 +52,7 @@ Click `Deploy to IBM Cloud` button above to deploy the application to IBM Cloud.
 be presented with a toolchain view and asked to "Deploy" the application. Go ahead and
 click `Deploy` button. The application should get deployed. Ensure that the application
 is started and that a Watson Assistant , Visual Recognition and Speech to text services are created and bound to the application just deployed. <br/>
-[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM/gdpr-fingerprint-pii.git)
+[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/tal2k4xj/Watson-Facebook-Chatbot.git)
 
 ### 3. Create facebook page and get facebook token
 
