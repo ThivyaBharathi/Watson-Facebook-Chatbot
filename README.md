@@ -56,6 +56,22 @@ is started and that a Watson Assistant , Visual Recognition and Speech to text s
 
 ### 3. Create facebook page and get facebook token
 
+#### 3.1 Create facebook page
+Click [here](https://www.facebook.com/business/learn/set-up-facebook-page) to set up your facebook page.
+#### 3.2 Get facebook token
+Go to [Facebook Developer Site](https://developers.facebook.com/apps/) and follow the steps :
+1. log in with the facebook account that created you facebook page.
+2. click on "Add a New App" , and give it a name.
+3. enter to the App page and click on the "Messenger" on the left menu and click on "settings".
+4. scroll down to "Token Generation" section and select your facebook page.
+<br/><img src="images/Token Generation.png" alt="Token Generation" width="640" border="10" /><br/>
+5. copy the facebook token for later use.
+6. scroll down to "Webhooks" and click on "Setup Webhooks".
+7. go to the [IBM Cloud dashboard](https://console.bluemix.net/dashboard/apps).
+8. find your app under the "Cloud Foundry Apps" and copy the App URL.
+<br/><img src="images/App URL.png" alt="App URL" width="640" border="10" /><br/>
+9. go back to the Webhooks Setup page and paste the APP URL in the Callback URL with suffix of "/facebook/webhook" , paste the facebook token and check the "messages", then click "Verify and Save".
+<br/><img src="images/Webhooks.png" alt="Webhooks" width="640" border="10" /><br/>
 
 ### 4. Upload workspace to Watson Assistant
 
