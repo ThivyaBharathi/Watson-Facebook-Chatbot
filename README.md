@@ -75,6 +75,18 @@ Go to [Facebook Developer Site](https://developers.facebook.com/apps/) and follo
 
 ### 4. Upload workspace to Watson Assistant
 
+1. go to the [IBM Cloud dashboard](https://console.bluemix.net/dashboard/apps).
+2. click on the "Watson-Assistant-chatbot" service.
+<br/><img src="images/services.png" alt="services" width="640" border="10" /><br/>
+3. on the left menu click on "Service credentials".
+4. create new credentials by clicking on the "New credential" button.
+5. click on "add" button.
+6. click on "View credentials" and copy the Username and Password for later use.
+<br/><img src="images/credentials.png" alt="credentials" width="640" border="10" /><br/>
+7. go back to "Manage" section from the left menu.
+8. and click on "Launch tool" button.
+9. find the "Upload" button to upload the workspace json , you can find him inside the "workspace" folder in this repository.
+<br/><img src="images/upload.png" alt="upload" width="640" border="10" /><br/>
 
 ### 5. Connect all together
 
