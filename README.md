@@ -75,24 +75,41 @@ Go to [Facebook Developer Site](https://developers.facebook.com/apps/) and follo
 
 ### 4. Upload workspace to Watson Assistant
 
-1. go to the [IBM Cloud dashboard](https://console.bluemix.net/dashboard/apps).
-2. click on the "Watson-Assistant-chatbot" service.
+##### 4.1 go to the [IBM Cloud dashboard](https://console.bluemix.net/dashboard/apps).
+##### 4.2 click on the "Watson-Assistant-chatbot" service.
 <br/><img src="images/services.png" alt="services" width="640" border="10" /><br/>
-3. on the left menu click on "Service credentials".
-4. create new credentials by clicking on the "New credential" button.
-5. click on "add" button.
-6. click on "View credentials" and copy the Username and Password for later use.
+##### 4.3 on the left menu click on "Service credentials".
+##### 4.4 create new credentials by clicking on the "New credential" button.
+##### 4.5 click on "add" button.
+##### 4.6 click on "View credentials" and copy the Username , Password and url for later use.
 <br/><img src="images/credentials.png" alt="credentials" width="640" border="10" /><br/>
-7. go back to "Manage" section from the left menu.
-8. and click on "Launch tool" button.
-9. find the "Upload" button to upload the workspace json , you can find him inside the "workspace" folder in this repository.
+##### 4.7 go back to "Manage" section from the left menu.
+##### 4.8 and click on "Launch tool" button.
+##### 4.9 find the "Upload" button to upload the workspace json , you can find him inside the "workspace" folder in this repository.
 <br/><img src="images/upload.png" alt="upload" width="640" border="10" /><br/>
-10. after you uploaded go back to the previous page and click on the three dots in the new workspace for more options and click "View details".
+##### 4.10 after you uploaded go back to the previous page and click on the three dots in the new workspace for more options and click "View details".
 <br/><img src="images/viewdetails.png" alt="viewdetails" width="640" border="10" /><br/>
-11. and copy the "Workspace ID" for later use.
+##### 4.11 and copy the "Workspace ID" for later use.
 
 ### 5. Connect all together
 
+##### 5.1 go to the [IBM Cloud dashboard](https://console.bluemix.net/dashboard/apps).
+##### 5.2 click on the route to the "Watson-Facebook-Chatbot" application.
+<br/><img src="images/cfroute.png" alt="cfroute" width="640" border="10" /><br/>
+##### 5.3 click "Next" button and create your node-red credentials , click more "Next" till you see the "Go to your NODE-RED flow editor" button and click on it.
+##### 5.4 now you can see the flow of your backend node-red server here is some explanation :
+<br/><img src="images/flowexplain.png" alt="flowexplain" width="640" border="10" /><br/>
+1 - verify the callback request.
+2 - get the callback from facebook messanger with the user input.
+3 - check the user input (text / speech / image).
+4 - handle text input.
+5 - handle speech input with speech-to-text service.
+6 - handle image input with visual-recognition service.
+7 - get the input to watson assistant service and send output to the user.
+##### 5.5 double click on the "conversation" , fill the username , password , uncheck "Use Default Service Endpoint" and fill the url you copied before and fill the workspace id you have copied before and click "Done".
+<br/><img src="images/conversationnode.png" alt="conversationnode" width="640" border="10" /><br/>
+##### 5.6 click on "Send API Request" node and fill the URL with this url : https://graph.facebook.com/v2.6/me/messages?access_token=<Insert Facebook Token>
+<br/><img src="images/sendapifacebook.png" alt="sendapifacebook" width="640" border="10" /><br/>
 
 ### 6. Communicate with your new chatbot
 
