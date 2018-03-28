@@ -1,16 +1,17 @@
+---
 declared-services:
-node-red-cloudantNoSQLDB:
-  label: cloudantNoSQLDB
-  plan: Lite
-Speech-to-Text-chatbot:
-  label: speech_to_text
-  plan: Lite
-Visual-Recognition-chatbot:
-  label: watson_vision_combined
-  plan: Lite
-Watson-Assistant-chatbot:
-  label: conversation
-  plan: Lite
+  node-red-cloudantNoSQLDB:
+    label: cloudantNoSQLDB
+    plan: Lite
+  Speech-to-Text-chatbot:
+    label: speech_to_text
+    plan: lite
+  Visual-Recognition-chatbot:
+    label: watson_vision_combined
+    plan: free
+  Watson-Assistant-chatbot:
+    label: conversation
+    plan: free
 applications:
 - path: .
   memory: 256M
