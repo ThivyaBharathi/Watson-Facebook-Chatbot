@@ -9,7 +9,7 @@ In this guide we will use IBM Watson services to build unique chatbot that can c
 
 # Flow
 
-<br/><img src="images/architecture.png" alt="architecture" width="640" border="10" /><br/>
+<br/><img src="images/archi.png" alt="archi" width="640" border="10" /><br/>
 1 – User input a request or ask question about his phone problem.<br/>
 2 – The facebook messanger of the facebook page will notify the facebook api that we got incoming message.<br/>
 3 – The facebook api will send to our node-red backend server the request with the user input.<br/>
