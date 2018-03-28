@@ -9,7 +9,7 @@ In this guide we will use IBM Watson services to build unique chatbot that can c
 
 # Flow
 
-<br/><img src="images/Architecture.png" alt="Architecture/Flow diagram" width="640" border="10" /><br/>
+<br/><img src="images/architecture.png" alt="architecture" width="640" border="10" /><br/>
 1 – User input a request or ask question about his phone problem.<br/>
 2 – The facebook messanger of the facebook page will notify the facebook api that we got incoming message.<br/>
 3 – The facebook api will send to our node-red backend server the request with the user input.<br/>
@@ -64,14 +64,14 @@ Go to [Facebook Developer Site](https://developers.facebook.com/apps/) and follo
 2. click on "Add a New App" , and give it a name.
 3. enter to the App page and click on the "Messenger" on the left menu and click on "settings".
 4. scroll down to "Token Generation" section and select your facebook page.
-<br/><img src="images/Token Generation.png" alt="Token Generation" width="640" border="10" /><br/>
+<br/><img src="images/tokengeneration.png" alt="tokengeneration" width="640" border="10" /><br/>
 5. copy the facebook token for later use.
 6. scroll down to "Webhooks" and click on "Setup Webhooks".
 7. go to the [IBM Cloud dashboard](https://console.bluemix.net/dashboard/apps).
 8. find your app under the "Cloud Foundry Apps" and copy the App URL.
-<br/><img src="images/App URL.png" alt="App URL" width="640" border="10" /><br/>
+<br/><img src="images/appurl.png" alt="appurl" width="640" border="10" /><br/>
 9. go back to the Webhooks Setup page and paste the APP URL in the Callback URL with suffix of "/facebook/webhook" , paste the facebook token and check the "messages", then click "Verify and Save".
-<br/><img src="images/Webhooks.png" alt="Webhooks" width="640" border="10" /><br/>
+<br/><img src="images/webhook.png" alt="webhook" width="640" border="10" /><br/>
 
 ### 4. Upload workspace to Watson Assistant
 
