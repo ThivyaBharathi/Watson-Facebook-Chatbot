@@ -60,17 +60,17 @@ is started and that a Watson Assistant , Visual Recognition and Speech to text s
 Click [here](https://www.facebook.com/business/learn/set-up-facebook-page) to set up your facebook page.
 #### 3.2 Get facebook token
 Go to [Facebook Developer Site](https://developers.facebook.com/apps/) and follow the steps :
-1. log in with the facebook account that created you facebook page.
-2. click on "Add a New App" , and give it a name.
-3. enter to the App page and click on the "Messenger" on the left menu and click on "settings".
-4. scroll down to "Token Generation" section and select your facebook page.
+##### 3.2.1 log in with the facebook account that created you facebook page.
+##### 3.2.2 click on "Add a New App" , and give it a name.
+##### 3.2.3 enter to the App page and click on the "Messenger" on the left menu and click on "settings".
+##### 3.2.4 scroll down to "Token Generation" section and select your facebook page.
 <br/><img src="images/tokengeneration.png" alt="tokengeneration" width="640" border="10" /><br/>
-5. copy the facebook token for later use.
-6. scroll down to "Webhooks" and click on "Setup Webhooks".
-7. go to the [IBM Cloud dashboard](https://console.bluemix.net/dashboard/apps).
-8. find your app under the "Cloud Foundry Apps" and copy the App URL.
+##### 3.2.5 copy the facebook token for later use.
+##### 3.2.6 scroll down to "Webhooks" and click on "Setup Webhooks".
+##### 3.2.7 go to the [IBM Cloud dashboard](https://console.bluemix.net/dashboard/apps).
+##### 3.2.8 find your app under the "Cloud Foundry Apps" and copy the App URL.
 <br/><img src="images/appurl.png" alt="appurl" width="640" border="10" /><br/>
-9. go back to the Webhooks Setup page and paste the APP URL in the Callback URL with suffix of "/facebook/webhook" , paste the facebook token and check the "messages", then click "Verify and Save".
+##### 3.2.9 go back to the Webhooks Setup page and paste the APP URL in the Callback URL with suffix of "/facebook/webhook" , paste the facebook token and check the "messages", then click "Verify and Save".
 <br/><img src="images/webhook.png" alt="webhook" width="640" border="10" /><br/>
 
 ### 4. Upload workspace to Watson Assistant
@@ -87,6 +87,9 @@ Go to [Facebook Developer Site](https://developers.facebook.com/apps/) and follo
 8. and click on "Launch tool" button.
 9. find the "Upload" button to upload the workspace json , you can find him inside the "workspace" folder in this repository.
 <br/><img src="images/upload.png" alt="upload" width="640" border="10" /><br/>
+10. after you uploaded go back to the previous page and click on the three dots in the new workspace for more options and click "View details".
+<br/><img src="images/viewdetails.png" alt="viewdetails" width="640" border="10" /><br/>
+11. and copy the "Workspace ID" for later use.
 
 ### 5. Connect all together
 
