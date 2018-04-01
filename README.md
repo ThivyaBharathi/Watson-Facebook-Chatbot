@@ -112,7 +112,7 @@ Go to [Facebook Developer Site](https://developers.facebook.com/apps/) and follo
 <br/><img src="images/sendapifacebook.png" alt="sendapifacebook" width="640" border="10" /><br/>
 
 ### 6. Communicate with your new chatbot
-####6.1 go to the facebook messanger and start communicate with your page:
+#### 6.1 go to the facebook messanger and start communicate with your page:
 <br/><img src="images/facebookchat.png" alt="facebookchat" width="640" border="10" /><br/>
 
 
