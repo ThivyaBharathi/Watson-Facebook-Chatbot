@@ -108,10 +108,12 @@ Go to [Facebook Developer Site](https://developers.facebook.com/apps/) and follo
 7 - get the input to watson assistant service and send output to the user.
 ##### 5.5 double click on the "conversation" , fill the username , password , uncheck "Use Default Service Endpoint" and fill the url you copied before and fill the workspace id you have copied before and click "Done".
 <br/><img src="images/conversationnode.png" alt="conversationnode" width="640" border="10" /><br/>
-##### 5.6 click on "Send API Request" node and fill the URL with this url : https://graph.facebook.com/v2.6/me/messages?access_token=<Insert Facebook Token>
+##### 5.6 click on "Send API Request" node and fill the URL with this url : https://graph.facebook.com/v2.6/me/messages?access_token="Insert Facebook Token"
 <br/><img src="images/sendapifacebook.png" alt="sendapifacebook" width="640" border="10" /><br/>
 
 ### 6. Communicate with your new chatbot
+####6.1 go to the facebook messanger and start communicate with your page:
+<br/><img src="images/facebookchat.png" alt="facebookchat" width="640" border="10" /><br/>
 
 
 # References
