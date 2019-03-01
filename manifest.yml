@@ -5,19 +5,19 @@ declared-services:
     plan: Lite
   Speech-to-Text-chatbot:
     label: speech_to_text
-    plan: lite
+    plan: Lite
   Visual-Recognition-chatbot:
     label: watson_vision_combined
-    plan: free
+    plan: Lite
   Watson-Assistant-chatbot:
     label: conversation
-    plan: free
+    plan: Lite
 applications:
 - path: .
   memory: 256M
   instances: 1
   domain: mybluemix.net
-  name: watson-facebook-chatbot
+  name: healthbot-ai
   disk_quota: 1024M
   services:
   - node-red-cloudantNoSQLDB
